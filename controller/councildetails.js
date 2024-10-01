@@ -6,7 +6,6 @@ const getCouncilDetails = async (req, res) => {
         
         if (council.length > 0) {
             return res.status(200).json({
-                message: 'Council details fetched successfully',
                 councilDetails: council
             });
         } else {

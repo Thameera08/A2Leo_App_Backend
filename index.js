@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 // Use club routes
 app.use("/v1/api/club", clubRoutes);
-app.use("/vi/api/district",councilRoutes);
+app.use("/v1/api/district",councilRoutes);
 // Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
