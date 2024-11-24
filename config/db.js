@@ -1,9 +1,11 @@
-const { Sequelize } = require('sequelize');
+const mongoose = require("mongoose");
+//to get packages and assign into variables.
 
-// Create a new Sequelize instance
-const sequelize = new Sequelize('appdata', 'root', '', {
-    host: 'localhost',
-    dialect: 'mysql', // Change if you're using a different DB like Postgres, etc.
-});
+const connectDB = async () => {
+  await mongoose
+    .connect(process.env.Mongo_URI)
+    .then(() => console.log("Connected to MongoDB Atlas"))
+    .catch((err) => console.error("MongoDB connection error:", err));
+};
 
-module.exports = sequelize;
+module.exports = connectDB;
