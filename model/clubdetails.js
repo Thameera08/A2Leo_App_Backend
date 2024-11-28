@@ -83,15 +83,15 @@ const CLubsschema = new Schema({
     StaffAdvisor: {
       name: {
         type: String,
-        required: true,
+       
       },
       email: {
         type: String,
-        required: true,
+        
       },
       contact: {
         type: String,
-        required: true,
+       
       },
     },
   },
