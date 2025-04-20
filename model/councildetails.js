@@ -14,6 +14,10 @@ const CouncillSchema = new Schema({
     type: String,
     required: true,
   },
+  club:{
+    type: String,
+    required: true,
+  },
   email: {
     type: String,
     required: true,
